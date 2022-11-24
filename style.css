@@ -55,6 +55,7 @@ p {
     list-style: none;
     font-size: 12px;
     padding: 0px 0 10px 0px;
+    margin-top: 75px;
 }
 
 .image ul li:after {
@@ -149,21 +150,30 @@ footer ul li a:active {
     padding-left: 16.5%;
 }
 
-
-/*
 header {
-    background-color: rgba(255, 255, 255, 0.903);
+    background-color: white;
     width: 100%;
-    margin-bottom: 20px;
     position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0 10px 0;
 }
 
 header ul {
     display: flex;
     flex-direction: row;
     list-style: none;
+    margin: 0;
+    width: 900px;
     padding: 0;
-    padding: 0 60px 0 60px;
+}
+
+header ul li {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0 8px 0 8px;
 }
 
 header li button {
@@ -173,20 +183,10 @@ header li button {
     color: #0b4dc7;
     line-height: 20px;
     border-color: transparent;
-    padding-left: 30px;
-    padding-right: 30px;
     background-color: white;
     margin: 0;
 }
 
-header li {
-    margin-left: 10px;
-}
-
 header button:hover {
     color: #269BF0;
-    border-bottom: #269BF0 !important;
-    border-bottom-width: 40px;
 }
-
-*/
