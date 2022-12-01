@@ -6,6 +6,8 @@
     <title>Vilnius Gediminas Technical University</title>
     <link rel="stylesheet" media="print" href="print.css" />
     <link rel="stylesheet" media="screen" href="style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 
 <body>
@@ -89,6 +91,60 @@ Your browser does not support the audio element.
                 <td>Asman</td>
             </tr>
         </table>
+        <ul class="svg-list">
+            <li>Element with svg1</li>
+            <li>Element with svg2</li>
+            <li>Element with svg3</li>
+        </ul>
+
+        <math xmlns='http://www.w3.org/1998/Math/MathML'>
+            <mrow>          
+             <msup><!--power on any expression-->
+              <mi>e</mi><!--identifier such as function names, variables or symbolic constants-->
+              <mi>x</mi>
+             </msup>
+             <mo>=</mo> <!--sign tag-->
+             <mfrac>
+                <msup>
+                 <mi>x</mi>
+                 <mn>3</mn>
+                </msup>
+                <mrow>
+                 <mn>3</mn>
+                 <mo>!</mo>
+                </mrow> <!--used to create a row-->
+               </mfrac>
+               <mo>+</mo>
+               <mfrac>
+                <msup>
+                 <mi>x</mi>
+                 <mn>2</mn> <!-- represents a numeric literal -->
+                </msup>
+                <mrow>
+                 <mn>2</mn>
+                 <mo>!</mo>
+                </mrow>
+               </mfrac>
+               <mo>+</mo>
+               <mfrac>
+                <mi>x</mi>
+                <mrow>
+                 <mn>1</mn>
+                 <mo>!</mo>
+                </mrow>
+               </mfrac>
+            </mrow>
+            <mrow>
+                <mrow>
+                 <mo>-</mo>
+                 <mo>&infin;</mo>
+                </mrow>
+                <mo>&lt;</mo>
+                <mi>x</mi>
+                <mo>&lt;</mo>
+                <mo>&infin;</mo>
+               </mrow>
+           </math>
     </div>
     <footer>
         <div class="info">
