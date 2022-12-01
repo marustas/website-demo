@@ -7,20 +7,27 @@ const printInfo = () => {
     let lastName = document.getElementById("lname").value;
     let num1 = document.getElementById("num1").value;
     let num2 = document.getElementById("num2").value;
-    // String to Number converting(since only Integeres are used, Number() is used)
-    let sum = Number(num1) + Number(num2);
-    let result = romanize(sum);
-    if (sum <= 7) {
-        info.style.color = "red";
-    } else if (sum > 7 && sum <= 14) {
-        info.style.color = "orange";
+
+    //Error handling
+    if (num1 >= 1 && num1 <= 10 && num2 > 1 && num2 <= 10) {
+        // String to Number converting(since only Integeres are used, Number() is used)
+        let sum = Number(num1) + Number(num2);
+        let result = romanize(sum);
+        if (sum <= 7) {
+            info.style.color = "red";
+        } else if (sum > 7 && sum <= 14) {
+            info.style.color = "orange";
+        } else {
+            info.style.color = "green";
+        }
+        const message = `Name: ${firstName},  Surname: ${lastName}.  Number1: ${num1},  Number2: ${num2}. Sum=${result}`;
+        console.log(message);
+        info.innerHTML = message;
     } else {
-        info.style.color = "green";
+        alert("Wrong Input values");
     }
-    const message = `Name: ${firstName},  Surname: ${lastName}.  Number1: ${num1},  Number2: ${num2}. Sum=${result}`;
-    console.log(message);
-    info.innerHTML = message;
 }
+
 
 //Roman numbers converting
 function romanize(num) {
