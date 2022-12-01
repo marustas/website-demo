@@ -2,7 +2,7 @@ const form = document.querySelector('form');
 const info = document.getElementById("user-info");
 
 //creating new values evry time btton is pushed
-const testing = () => {
+const printInfo = () => {
     let firstName = document.getElementById("fname").value;
     let lastName = document.getElementById("lname").value;
     let num1 = document.getElementById("num1").value;
@@ -10,6 +10,13 @@ const testing = () => {
     // String to Number converting(since only Integeres are used, Number() is used)
     let sum = Number(num1) + Number(num2);
     let result = romanize(sum);
+    if (sum <= 7) {
+        info.style.color = "red";
+    } else if (sum > 7 && sum <= 14) {
+        info.style.color = "orange";
+    } else {
+        info.style.color = "green";
+    }
     const message = `Name: ${firstName},  Surname: ${lastName}.  Number1: ${num1},  Number2: ${num2}. Sum=${result}`;
     console.log(message);
     info.innerHTML = message;
@@ -33,5 +40,5 @@ function romanize(num) {
 form.addEventListener('submit', (e) => {
     e.preventDefault(); //to prevent auto submit by refresh
     //function call
-    testing();
+    printInfo();
 })
