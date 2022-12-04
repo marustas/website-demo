@@ -9,7 +9,7 @@ const printInfo = () => {
     let num2 = document.getElementById("num2").value;
 
     //Error handling
-    if (num1 >= 1 && num1 <= 10 && num2 > 1 && num2 <= 10) {
+    if (num1 >= 1 && num1 <= 10 && num2 >= 1 && num2 <= 10) {
         // String to Number converting(since only Integeres are used, Number() is used)
         let sum = Number(num1) + Number(num2);
         let result = romanize(sum);
